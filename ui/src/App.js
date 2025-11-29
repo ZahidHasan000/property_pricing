@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/predict" element={<CreateUserForm />} />
+        <Route path="/" element={<CreateUserForm />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: property-pricing-api
+    env: python
+    plan: free
+    buildCommand: pip install -r fake/requirements.txt
+    startCommand: python fake/hasan.py
+    envVars:
+      - key: MONGO_URI
+        sync: false
